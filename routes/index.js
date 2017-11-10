@@ -83,6 +83,7 @@ app.get('/select/:id',(req, res) => {
 
 app.delete('/delete/:id', (req, res) => {
   var id = req.params.id;
+  console.log(id);
 
   if (!ObjectID.isValid(id)){
     return res.status(404).send();
