@@ -62,7 +62,7 @@ app.get('/select',(req, res) => {
 
 app.get('/select/:id',(req, res) => {
   var id = req.params.id;
-
+  console.log(id);
   if (!ObjectID.isValid(id)){
     return res.status(404).send();
   }
