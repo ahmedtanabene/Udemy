@@ -11,7 +11,7 @@ var fs = require('fs');
 var colors = require('colors');
 var mongoose = require ('mongoose');
 
-//eclipse
+
 mongoose.connect('mongodb://localhost:27017/Udemy', {useMongoClient:true},function(err){
 
   if (err){
